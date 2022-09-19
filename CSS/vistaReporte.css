@@ -1,0 +1,154 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto",sans-serif;
+    background-color: #E9C1EA;
+}
+/*ESTILOS PARA EL CONTENEDOR DE IMAGEN Y TEXTO PRODUCTOS*/
+.ordenReporte__contenedor-punta{
+    display:inline-block;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+/*TAMAÑO DE LA IMAGEN*/
+.ordenReporte__estilo-imagen{ 
+    width: 66px;
+    height: 66px;
+}
+
+/*ESTILOS PARA EL TEXTO PRODUCTOS*/
+.ordenReporte__texto-ordenReporte{ 
+    display:inline-block;
+    position: relative;
+    bottom: 30px;
+    font-weight: bold;
+}
+
+/*ESTILOS PARA EL BOTON SALIR DEL HEADER*/
+.ordenReporte__boton-salir{
+    height: 27px;
+    width: 100px;
+    border: 3px solid #14FA39;
+    border-radius: 10px;
+    background: white;
+}
+
+.ordenReporte__boton-salir{
+    font-family: inherit; /*HERENCIA*/
+    font-size: small;
+    display:inline-block;
+    position: relative;
+    left: 900px;
+    bottom: 20px;
+}
+/*ESTILOS DE CONTENIDO DE FORMULARIOS*/
+.reporteFormularios{
+    display:flex;
+    gap: 2%;
+    margin: 70px 20px;
+}
+.reporteFormularios__fi{
+    margin-bottom: 15px;
+    border-radius: 20px;
+    border: 5px solid #A2F4CD;
+    background: white;
+    font-family:inherit;
+    padding:3px;
+}
+.reporteFormularios__ff{
+    margin-bottom: 15px;
+    border-radius: 20px;
+    border: 5px solid #A2F4CD;
+    background: white;
+    font-family:inherit;
+    padding:3px;
+}
+
+.reporteFormularios__boton{
+    border-radius: 20px;
+    border: 5px solid #A2F4CD;
+    background: white;
+    width: 100px;
+    height: 38px;
+    margin-top: 15px;
+    position:relative;
+    left:60px;
+}
+
+.reporteFormularios__texto{
+    font-weight: bold;
+    font-family: inherit;
+}
+.reporteBuscar{
+    width: 260px;
+    height: 215px;
+
+
+}
+
+.reporteFormularios__img {
+    width: 70px;
+    height: 60px;
+    position:relative;
+    left: 80px;
+    margin-bottom: 10px;
+}
+.reporteVer{
+    width: 260px;
+    height: 200px;
+
+}
+    
+.reporteGenerar{
+    width: 260px;
+    height: 300px;
+
+} 
+.reporteGuardar{
+    width: 260px;
+    height: 200px;
+   
+}
+.reporteImprimir{
+    width: 260px;
+    height: 215px;
+
+}
+
+/*contenedor de ingresar producto al sistema*/
+.sec-generarReporte{
+    width: 208px;
+    height: 140px;
+    margin-top: 15px;
+    position:relative;
+    left:2px
+}
+
+.generarReporte__cont-principal{
+    width: 208px;
+    height: 100px;
+    border-radius: 20px;
+    border: 5px solid #A2F4CD;
+    background: white;
+}
+
+.generarReporte__cont-principal h5{
+    font-family: inherit;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.generarReporte__cont-principal div{
+    border: 5px solid black;
+    width: 40px;
+    float: left;
+    text-align: center;
+    position: relative;
+    left: 60px;
+    margin-top:10px;
+}

@@ -1,0 +1,174 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:"Roboto", sans-serif;
+    background-color:#A2F4CD;
+    width: 100%;
+}
+
+
+/*ESTILOS PARA EL CONTENEDOR DE IMAGEN Y TEXTO PRODUCTOS*/
+.ordenCompra__contenedor-punta{
+    display:inline-block;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+/*TAMAÑO DE LA IMAGEN*/
+.ordenCompra__estilo-imagen{ 
+    width: 66px;
+    height: 66px;
+}
+
+/*ESTILOS PARA EL TEXTO PRODUCTOS*/
+.ordenCompra__texto-ordenCompra{ 
+    display:inline-block;
+    position: relative;
+    bottom: 30px;
+}
+
+/*ESTILOS PARA EL BOTON SALIR DEL HEADER*/
+.ordenCompra__boton-salir{
+    height: 27px;
+    width: 100px;
+    border: 3px solid #F13CF6;
+    border-radius: 10px;
+    background: white;
+}
+
+.ordenCompra__boton-salir{
+    font-family: inherit; /*HERENCIA*/
+    font-size: small;
+    display:inline-block;
+    position: relative;
+    left: 50%;
+    bottom: 20px;
+}
+
+/*ESTILOS PARA SECCIÓN FORM*/
+#formu-datosventa{
+    display: flex; /* los contenedores del formulario se ubican verticalmente*/
+    gap: 15px; /*con gap hago distanciamiento de los elementos*/
+    margin: 24px 40px;
+
+}
+/*contenedor del espacio de todos los inputs de código*/
+ #insertCodeOrder, #insertCodeOrder__input{
+width: 120px;
+height: 25px;
+background: #FEFEFF;
+border: 3px solid #EDCCEE;
+border-radius: 20px;
+margin-bottom: 20px;
+}
+
+    #insertproductName, #insertproductName__input{
+    width: 150px;
+    height: 25px;
+    background: #FEFEFF;
+    border: 3px solid #EDCCEE;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+/*contenedor del espacio de todos los inputs de valor unitario producto*/
+    #insertvalueUniOrder, #insertvalueUniOrder__input{
+    width: 83px;
+    height: 25px;
+    background: #FEFEFF;
+    border: 3px solid #EDCCEE;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    }
+
+    
+    /*contenedor del espacio de todos los inputs de cantidad producto*/
+    #insertcantiOrder, #insertvaluecantiOrder__input{
+    width: 83px;
+    height: 25px;
+    background: #FEFEFF;
+    border: 3px solid #EDCCEE;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    }
+    
+    #insertPartialvalueOrder, #insertPartialvalueOrder__input{
+    width: 83px;
+    height: 25px;
+    background: #FEFEFF;
+    border: 3px solid #EDCCEE;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    }
+    
+    #insertdateOrder, #insertdateOrder__input{
+    width: 150px;
+    height: 30px;
+    background: #FEFEFF;
+    border: 3px solid #EDCCEE;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    }
+
+/*BOTON PARA AGREGAR PRODUCTO*/
+.insertTotalvalueOrder__button{
+    border: 3px solid #F13CF6;
+    border-radius: 10px;
+    background: white;
+    width: 100px;
+    height: 50px;
+    margin: 20px;
+}
+
+/* ESTILOS FOOTER*/
+
+.contenidoInferiorOrdenCompra{
+    display: flex;
+    gap: 8%;
+    position: relative;
+    left: 250px;
+}
+.contFiguraOrdenCompra{
+    width: 133px;
+    height: 70px;
+    background: #FEFEFF;
+    border: 2px solid #EDCCEE;
+    border-radius: 20px;
+    position: relative;
+    margin-left: 10%;
+
+}
+/*imagen de buscar*/
+.contFiguraOrdenCompra__img{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.insertTotalvalueOrder__input{
+    width: 100px;
+    height: 30px;
+    background: #FEFEFF;
+    border: 3px solid #EDCCEE;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+
+/*BOTON PARA AGREGAR VENTA*/
+.TotalvalueOrder__button{
+    border: 3px solid #F13CF6;
+    border-radius: 10px;
+    background: white;
+}
+

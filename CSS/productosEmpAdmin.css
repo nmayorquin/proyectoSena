@@ -1,0 +1,251 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #A2F4CD;
+    font-family: "Prociono" , sans-serif;
+}
+/*ESTILOS PARA EL HEADER*/
+.header{
+    float: right;
+}
+
+/*ESTILOS PARA EL CONTENEDOR DE IMAGEN Y TEXTO PRODUCTOS*/
+.header__contenedor-punta{
+    display:inline-block;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+/*TAMAÑO DE LA IMAGEN*/
+.header__estilo-imagen{ 
+    width: 66px;
+    height: 66px;
+}
+
+/*ESTILOS PARA EL TEXTO PRODUCTOS*/
+.header__texto-productos{ 
+    display:inline-block;
+    position: relative;
+    bottom: 30px;
+}
+
+/*ESTILOS PARA EL BOTON SALIR DEL HEADER*/
+.header__boton-salir{
+    height: 27px;
+    width: 100px;
+    border: 3px solid #F13CF6;
+    border-radius: 10px;
+    background: white;
+}
+
+.header__boton-salir{
+    font-family: inherit; /*HERENCIA*/
+    font-size: small;
+    display:inline-block;
+    position: relative;
+    left: 50%;
+    bottom: 20px;
+    
+}
+
+/*CARACTERÍSTICAS DEL CONTENEDOR DE FUNCIONES CON IMÁGENES*/
+.estilo-cajaFunciones {
+    width: 400px;
+    height: 55px;
+    background: #FFF9F9;
+    border-radius: 20px;
+    position: relative;
+    left: 10%;
+    bottom:10%;
+    display: inline-block;
+}   
+
+.estilo-cajaFunciones figure{
+    display:inline-block;
+    text-align: center;
+    padding:10px 10px;
+}
+.estiloImagenAtras{
+    width: 24px;
+    height: 25px;
+    transform:rotate(180deg); /*se usa este atributo para cambiar la flecha de sentido*/
+}
+
+.estiloImagenAdelante {
+    width: 24px;
+    height: 25px;
+}
+.estiloImagenEditar{
+    width: 24px;
+    height: 25px;
+}
+.estiloImagenEliminar{
+    width: 40px;
+    height: 25px;
+}
+.estiloImagenBuscar{
+    width: 24px;
+    height: 25px;
+}
+
+/*ESTILOS imagen de agregar producto*/
+.contenedorImagen-addCar{
+    width: 64px;
+    height: 64px;
+    position: relative;
+    left:16%;
+    padding-top: 45px;
+}
+
+.contenedorImagen-addCar img{
+    width: 64px;
+    height: 64px;
+
+}
+
+/*ESTILOS CONTENEDOR DE REGISTRO DE PRODUCTO*/
+.contenedor-registroProducto{ 
+    position:relative;
+    left: 40px;
+    top: 60px;
+    width: 420px;
+    height: 240px;
+    text-align: right; /*esta propiedad centró el disco de guardar*/
+    float:left; /*si muevo esto a right se centra el contenido*/
+}
+
+
+
+.contenedor-registroProducto form{
+    width: 420px;
+    height: 240px;
+ 
+}
+.contenedor-registroProducto label{
+    width: 500px;
+    height: 19px;
+    display:inline-block;
+    vertical-align:top; 
+    padding: 5%;
+    text-align: right;
+    position: relative;
+    right: 70px;
+}
+
+.contenedor-registroProducto span{
+    text-align:right;
+    top: 9px;
+    }
+
+.registroProducto__add, .registroProducto__valor{
+    height: 27px;
+    width: 220px;
+    border: 3px solid #EDCCEE;
+    border-radius: 20px;
+    background: white; 
+}
+
+
+
+/*contenedor de ingresar producto al sistema*/
+
+
+.guardarProducto__cont-principal button{
+    width: 208px;
+    height: 60px;
+    border-radius: 20px;
+    border: 5px solid #E9C1EA;
+    background: white;
+    float: left;
+    position: relative;
+    left:50px;
+    top:100px;
+}
+
+
+
+/*CONTENEDOR PARA GUARDAR UNA IMAGEN EN ESE ESPACIO POR PARTE DEL CLIENTE*/
+#seccionImagen{
+    height: 157px;
+    width: 250px;
+    position: relative;
+    left:180px;
+    float: left;
+}
+
+.insertarImagen{
+   
+    border: 5px solid #E9C1EA;
+    background-color: white;
+    border-radius: 20px;
+    position: absolute; /*si el contenedor principal tiene relative, se coloca absolute para que este se mueva con su contenedor padre*/
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.insertarImagen__textoDentro{
+    color: black;
+    font-family: inherit;
+    line-height: 60px;
+}
+
+.insertarImagen__add{
+   position: absolute; /*si el contenedor principal tiene relative, se coloca absolute para que este se mueva con su contenedor padre*/
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+}
+
+/*contenedor de ingresar producto al sistema*/
+#sec-agregarImagenProducto{
+    width: 208px;
+    height: 60px;
+    vertical-align: top;
+    position: relative;
+    top: 110%;
+    left:20px
+}
+
+.agregarImagenProducto__cont-principal{
+    width: 215px;
+    height: 80px;
+    border-radius: 20px;
+    border: 5px solid #E9C1EA;
+    background: white;
+}
+
+.agregarImagenProducto__texto{
+    font-family: inherit;
+    text-align: center;
+}
+
+.agregarImagenProducto__siNo{
+    border: 5px solid black;
+    width: 50px;
+    float: left;
+    text-align: center;
+    position: relative;
+    left: 40px;
+}
+
+.agregarImagenProducto__img{
+    width: 50px;
+    height: 50px;
+    position:relative;
+    right: 20px;
+    top: 70%;
+}
+
+
