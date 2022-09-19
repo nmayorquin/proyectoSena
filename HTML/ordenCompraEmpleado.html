@@ -1,0 +1,73 @@
+<!DOCTYPE html> <!-- esto es un archivo html-->
+<html lang="en"> <!-- tipo de idioma escrito-->
+    <head> <!-- etiquetas de escritura-->
+        <meta charset="UTF-8"> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>THE BEST TEAM</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Prociono&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../CSS/ordenCompraEmpleado.css">
+    </head>
+
+    <body>
+        <header class="headerOrdenCompra">
+            <a href="../HTML/crudEmpleado.html">
+            <figure class= "ordenCompra__contenedor-punta">
+                <img class="ordenCompra__estilo-imagen" src="https://firebasestorage.googleapis.com/v0/b/bestteam-a5bbb.appspot.com/o/orden-procesada.png?alt=media&token=09b37fe9-9cb7-4604-8a43-e75c43bb406f"  alt="inventario pick"> 
+                <figcaption class ="ordenCompra__texto-ordenCompra"> ORDEN DE COMPRA</figcaption>
+            </figure></a>
+            <button class="ordenCompra__boton-salir" type="submit"> SALIR</button>
+        </header>
+
+        <form id="formu-datosventa">
+                <label id="igual" class="insertCodeOrder" for="productCode">
+                    <span>CÓDIGO</span>
+                    <input id="insertCodeOrder__input" type="text"  required/>
+                </label>
+    
+            <label id="igual" class="insertproductName">
+                <span>PRODUCTO</span>
+                <input id="insertproductName__input" type="text"  required/>
+            </label>
+
+            <label id="igual" class="insertvalueUniOrder">
+                <span>VALOR UNITARIO</span>
+                <input id="insertvalueUniOrder__input" type="text"  required/>
+            </label>
+
+            <label id="igual" class="insertcantiOrder">
+                <span>CANTIDAD</span>
+                <input id="insertvaluecantiOrder__input" type="text"   required/>
+
+            </label>
+    
+            <label id="igual" class="insertPartialvalueOrder">
+                <span>VALOR PARCIAL</span>
+                <input id="insertPartialvalueOrder__input" type="text"   required/>
+            </label>
+
+            <label id="igual" class="insertdateOrder">
+                <span>FECHA VENTA</span>
+                <input id="insertdateOrder__input" type="datetime-local"  required/>
+            </label>
+        </form>
+        
+            <button class="insertTotalvalueOrder__button" onclick="adherir()"> AGREGAR OTRO PRODUCTO</button>
+
+        <footer class="contenidoInferiorOrdenCompra">
+            <figure class="contFiguraOrdenCompra">
+                <img class="contFiguraOrdenCompra__img" src="https://firebasestorage.googleapis.com/v0/b/bestteam-a5bbb.appspot.com/o/buscar.png?alt=media&token=1a711970-0af5-443e-b717-2cccf4e1e07f" alt="">
+            </figure>
+
+                <label class="insertTotalvalueOrder">
+                    <span>VALOR TOTAL</span>
+                    <input class="insertTotalvalueOrder__input" type="text"  id="productCode" required/>
+                    <input class="TotalvalueOrder__button" onclick="guardarOrdenCompraEmpl()" type="submit" value="AGREGAR VENTA">
+                </label>    
+        </footer>
+        <script src="../JS/addNewRow.js"> </script>
+    </body>
+
+</html>

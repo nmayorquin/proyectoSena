@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reporte</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/vistaReporte.css">
+
+</head>
+    <header class="headerReporte">
+        <a href="../HTML/crudAdministrador.html">
+        <figure class= "ordenReporte__contenedor-punta">
+            <img class="ordenReporte__estilo-imagen" src="https://firebasestorage.googleapis.com/v0/b/bestteam-a5bbb.appspot.com/o/reporte.png?alt=media&token=f34aad75-317f-4263-86b5-77053d5ec6dc"  alt="Reporte">
+            <figcaption class ="ordenReporte__texto-ordenReporte"> REPORTE</figcaption>
+        </figure></a>
+        <a href="../HTML/Index.html"><button class="ordenReporte__boton-salir"> SALIR</button></a>
+       
+    </header>
+    <form class="reporteFormularios">
+        <label class="reporteBuscar">
+            <figure>
+                <img class= "reporteFormularios__img"src="https://firebasestorage.googleapis.com/v0/b/bestteam-a5bbb.appspot.com/o/buscar.png?alt=media&token=1a711970-0af5-443e-b717-2cccf4e1e07f">
+            </figure>
+            <span class="reporteFormularios__texto">Fecha inicial:</span>
+            <input class="reporteFormularios__fi"type="datetime-local">
+            <span class="reporteFormularios__texto">Fecha final:</span>
+            <input class="reporteFormularios__ff" type="datetime-local">
+            <input class="reporteFormularios__boton"type="submit"value="BUSCAR">
+        </label>
+        <label class="reporteVer">
+            <figure>
+                <img class= "reporteFormularios__img" src="https://firebasestorage.googleapis.com/v0/b/bestteam-a5bbb.appspot.com/o/ojo.png?alt=media&token=410dd7e6-cd43-4e9a-b25b-f8a26f95cd4c">
+            </figure>
+            <span class="reporteFormularios__texto">Fecha inicial:</span>
+            <input class="reporteFormularios__fi" type="datetime-local">
+            <span class="reporteFormularios__texto">Fecha final:</span>
+            <input class="reporteFormularios__ff" type="datetime-local">
+        </label>
+        <label class="reporteGenerar">
+            <figure>
+                <img class= "reporteFormularios__img" src="https://firebasestorage.googleapis.com/v0/b/bestteam-a5bbb.appspot.com/o/Generar.png?alt=media&token=cc4fd13f-9c49-4b34-8612-719f8eac98b5">
+            </figure>
+            <span class="reporteFormularios__texto">Fecha inicial:</span>
+            <input class="reporteFormularios__fi" type="datetime-local">
+            <span class="reporteFormularios__texto">Fecha final:</span>
+            <input class="reporteFormularios__ff" type="datetime-local">
+            <section class="sec-generarReporte">
+                <div class="generarReporte__cont-principal">
+                    <h5>¿Desea generar este reporte?</h5>
+                        <div>SI</div>
+                        <div>NO</div>
+                </div>
+            </section>
+        </label>
+        <label class="reporteGuardar">
+            <figure>
+                <img class= "reporteFormularios__img" src="https://firebasestorage.googleapis.com/v0/b/bestteam-a5bbb.appspot.com/o/Guardar.png?alt=media&token=20caaf58-8541-41df-9e61-ca42f41d4961">
+            </figure>
+            <span class="reporteFormularios__texto">Fecha inicial:</span>
+            <input class="reporteFormularios__fi" type="datetime-local">
+            <span class="reporteFormularios__texto">Fecha final:</span>
+            <input class="reporteFormularios__ff"type="datetime-local">
+        </label>
+        <label class="reporteImprimir">
+            <figure>
+                <img class= "reporteFormularios__img" src="https://firebasestorage.googleapis.com/v0/b/bestteam-a5bbb.appspot.com/o/impresora.png?alt=media&token=b75c620c-7d2a-419e-ba32-283d5f7bcf35">
+            </figure>
+            <span class="reporteFormularios__texto">Fecha inicial:</span>
+            <input class="reporteFormularios__fi" type="datetime-local">
+            <span class="reporteFormularios__texto">Fecha final:</span>
+            <input class="reporteFormularios__ff" type="datetime-local">
+            <input class="reporteFormularios__boton" type="submit" value="IMPRIMIR">
+        </label>
+    </form>
+</body>
+</html>
