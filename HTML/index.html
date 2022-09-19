@@ -1,0 +1,167 @@
+<!DOCTYPE html> <!-- esto es un archivo html-->
+<html lang="en"> <!-- tipo de idioma escrito-->
+    <head> <!-- etiquetas de escritura-->
+        <meta charset="UTF-8"> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HOME</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Prociono&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../CSS/index.css">
+    </head>
+
+    <body>
+<!--  SECCIÓN SUPERIOR: USUARIO - CONTRASEÑA - ROL BOTON INGRESAR-->
+        <header>      
+<!--SECCIÓN SUPERIOR: USUARIO-->
+                <form id="ingreso-plataforma" class="header">
+                    <label class="ingreso-usuario" for="ingreso-usuario">
+                        <span>E- MAIL</span>
+                        <input id="ingreso-plataforma__email" type="email" class="ingreso-usuario__input" id="ingreso-usuarioEmail" autocomplete="username" required/>
+                    </label>
+                
+    <!--SECCIÓN SUPERIOR: CONTRASEÑA-->
+                <label  class="ingreso-contra" for="ingreso-pass" >
+                    <span>CONTRASEÑA</span>
+                    <input id="ingreso-plataforma__pass" type="password" class="ingreso-contra__input" id="ingreso-pass" autocomplete="new-password" required/> 
+                </label>
+
+    <!--SECCIÓN SUPERIOR: ROL-->
+                <label class="ingreso-rol" for="roles">
+                    <span>ROL</span>
+                    <input class="ingreso-rol__input" list="roles" required>
+                    <datalist id="roles">       
+                        <option value="ADMINISTRADOR"></option>
+                        <option value="EMPLEADO"></option>
+                    </datalist>
+                 </label>
+        <!--SECCIÓN SUPERIOR: BOTON INGRESAR-->
+                 <button type="submit" class="header__boton-ingresar" >INGRESAR</button>
+
+                </form>
+
+        </header>
+
+        <main>  <!--  CONTENEDOR PRINCIPAL:todo el contorno - ESTO SIRVE PARA TODOS --> 
+            
+  <!-- SECCIÓN LADO IZQUIERDO-->
+            <section class="seccion-izq"> 
+                    <!--TODO: inventario-->                     
+                <figure>
+                    <img src="https://firebasestorage.googleapis.com/v0/b/bestteam-a5bbb.appspot.com/o/inventario.png?alt=media&token=d60885df-a015-453f-8929-5eeb152b8b98"  alt="inventario pick"> 
+                    <figcaption class ="estiloTextoImagen"> INVENTARIO</figcaption>
+                </figure>
+                        
+                    <!--TODO: promociones-->        
+                <figure>       
+                    <img src="https://firebasestorage.googleapis.com/v0/b/bestteam-a5bbb.appspot.com/o/promocion.png?alt=media&token=b2d0883f-62ad-4f0d-b7c0-b18fa8acc303"  alt="promoción pick">
+                    <figcaption> PROMOCIONES</figcaption>
+                </figure>
+            
+                    <!--TODO: configuración-->
+                <figure> 
+                    <img  src="https://firebasestorage.googleapis.com/v0/b/bestteam-a5bbb.appspot.com/o/configuraciones.png?alt=media&token=70a998c1-5208-4939-951b-82949b6d6f54"  alt="configuración pick">
+                    <figcaption> CONFIGURACIÓN</figcaption>
+                </figure>
+            
+                    <!--TODO: contáctanos-->
+                <figure>                  
+                    <img src="https://firebasestorage.googleapis.com/v0/b/bestteam-a5bbb.appspot.com/o/help.png?alt=media&token=8ef30432-0e20-44a9-a282-f768bf36b415"  alt="help pick"> 
+                    <figcaption> CONTÁCTANOS</figcaption>
+                </figure>
+            </section>
+
+        <!-- SECCIÓN REGISTRARSE-->
+            <section class="seccion-regis">
+                <!-- registrarse-->
+         <!-- FORMULARIO REGISTRO DE PERSONAS-->
+                    <!-- nombres-->
+                <form id="formularioInscripcion" action="">
+                    <h4 class="seccion-regis__texto-registro"> REGISTRARSE</h4>
+                    <label  for="nombre_usuario">
+                        <span>NOMBRE(S) Y APELLIDO(S)</span>
+                        <input type="text" name="nombre-apellido_usuario" id="nombre-apellido_usuario" autocomplete="name" required/> 
+                    </label>
+
+                    <!-- email-->
+                    <label for="email_usuario">
+                        <span>E- MAIL</span>
+                        <input type="email" name="email_usuario" id="email_usuario" required> 
+                    </label>
+
+                    <!-- identificación-->
+                    <label for="id_usuario">
+                        <span>IDENTIFICACIÓN</span>
+                        <input type="text" name="id_usuario" id="id_usuario" required> 
+                    </label>
+
+                    <!-- digite contraseña -->
+                    <label for="pass_usuario">
+                        <span>DIGITE CONTRASEÑA</span>
+                        <input  type="password" name="pass_usuario" id="pass_usuario" required> </input>
+                    </label>
+
+                    <!-- digite contraseña nuevamente -->
+                    <label for="repetaPass_usuario">
+                        <span>CONFIRMAR CONTRASEÑA</span>
+                        <input type="password" name="repetPass_usuario" id="repetaPass_usuario" required> </input>
+                    </label>
+
+                    <!--SECCIÓN SUPERIOR: ROL -->
+                    <label for="">
+                        <span>ROL ASIGNADO</span>
+                        <input class="campo-roles" list="roles">
+                        <datalist  id="roles">
+                            <option id="admin" value="ADMINISTRADOR"></option>
+                            <option id="empl" value="EMPLEADO"></option>
+                        </datalist>
+                     </label>
+                     <button class="boton-registro" type="submit">REGISTRARSE </button>
+                </form>
+                <!--SECCIÓN SUPERIOR: BOTON REGISTRAR -->
+               
+            </section>
+
+                <!--CALCULADORA-->
+            <section class="container">
+                <div class="calculadora">
+                    <div class="display">
+                        <div id="valor-anterior"></div>
+                        <div id="valor-actual"></div>
+                    </div>
+                    <button class="col-2" onclick= "Display.borrarTodo()">C</button>
+                    <button onclick="Display.borrar()">&larr;</button>
+                    <button class="operador" value="dividir">%</button>
+                    <button class="numero">7</button>
+                    <button class="numero">8</button>
+                    <button class="numero">9</button>
+                    <button class="operador" value="multiplicar">X</button>
+                    <button class="numero">4</button>
+                    <button class="numero">5</button>
+                    <button class="numero">6</button>
+                    <button class="operador" value="restar">-</button>
+                    <button class="numero">1</button>
+                    <button class="numero">2</button>
+                    <button class="numero">3</button>
+                    <button class="operador" value="sumar">+</button>
+                    <button class="col-2 numero">0</button>
+                    <button class="numero">.</button>
+                    <button class="operador" value="igual">=</button>
+                </div>
+            </section>
+
+                </div>
+
+            </div>    
+        </main>
+
+        <!--UNIÓN DE ARCHIVOS JS PARA EL FUNCIONAMIENTO DE LA CALCULADORA-->
+        <script src="../JS/Index.js" > </script>
+        <script src="../JS/Calculadora.js"></script>
+        <script src="../JS/Display.js"> </script>
+    </body>
+
+       
+      
+</html>
