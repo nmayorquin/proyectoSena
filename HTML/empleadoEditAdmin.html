@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD EMPLEADOS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prociono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/empleadoEditAdmin.css">
+</head>
+    <body>
+        <header>
+            <a href="../HTML/crudEmpleado.html">
+            <figure class= "header__figureEmpleadoEdit">
+                <img class="header__imgEmpleadoEdit" src="https://firebasestorage.googleapis.com/v0/b/bestteam-a5bbb.appspot.com/o/grupo.png?alt=media&token=519db9aa-7c0f-4969-a66a-71235828e99d"  alt=" "> 
+                <figcaption class ="header__texto-empleadoEdit"> EMPLEADOS</figcaption>
+            </figure></a>
+            <a href="../HTML/Index.html">
+                <button class="header__botonsalirEmpleadoEdit" type="submit"> SALIR</button></a>
+        </header>
+
+        <main>
+                <!--SECCIÓN DE BOTONES-->
+                <section class="botonesCrud">
+                <!-- BOTON PARA SELECCIONAR-VER UN EMPLEADO-->
+                    <button id="boton__verE" action="">
+                        <figure>
+                            <img class="verE__imgEdit" src="https://firebasestorage.googleapis.com/v0/b/bestteam-a5bbb.appspot.com/o/ojo.png?alt=media&token=410dd7e6-cd43-4e9a-b25b-f8a26f95cd4c" alt="">
+                        </figure>
+                    </button>
+                <!-- BOTON PARA AGREGAR UN EMPLEADO-->
+                    <button id="boton__agregarE">
+                        <figure>
+                            <img class="agregarE__imgEdit" src="https://firebasestorage.googleapis.com/v0/b/bestteam-a5bbb.appspot.com/o/AgregarE.png?alt=media&token=fc8324b4-904e-4506-938f-1a0e5d734889" alt="">
+                        </figure>
+                    </button>
+
+                    <!-- BOTON PARA ACTUALIZAR-EDITAR UN EMPLEADO-->
+                    <button id="boton__updateE">
+                        <figure>
+                            <img class="editarE__imgEdit" src="https://firebasestorage.googleapis.com/v0/b/bestteam-a5bbb.appspot.com/o/editar.png?alt=media&token=4db443c1-ebf1-43cd-95d2-4982cffe85f5" alt="">
+                        </figure> 
+                    </button>
+
+                    <!-- BOTON PARA ELIMINAR UN EMPLEADO-->
+                    <button id="boton__deleteE">
+                        <figure>
+                            <img class="deleteE__imgEdit" src="https://firebasestorage.googleapis.com/v0/b/bestteam-a5bbb.appspot.com/o/contenedor-de-basura.png?alt=media&token=f66bf4cc-5e7e-436d-b560-0757bd3d7e7e" alt="">
+                        </figure>
+                    </button>
+                    </section>
+
+            <form class="seccionTodo__agregarE" action="">
+                <label class="agregarE__labelEdit" for="empleado">
+                    <span>NOMBRE(S) Y APELLIDO(S)</span>
+                    <input class="agregarE__inputEdit" type="text" name="empleado" id="agregarE__nombre" autocomplete="name" required/> 
+                </label>
+                <label class="agregarE__labelEdit"  for="empleado">
+                    <span>IDENTIFICACIÓN</span>
+                    <input class="agregarE__inputEdit" type="text" name="empleado" id="agregarE__id"   required> 
+                </label>
+
+                <label class="agregarE__labelEdit"  for="empleado">
+                    <span>E-MAIL</span>
+                    <input class="agregarE__inputEdit" type="text" name="empleado" id="agregarE__email" autocomplete="email" required> 
+                </label>
+
+                <label class="agregarE__labelEdit"  for="empleado">
+                    <span>DIGITE CONTRASEÑA</span>
+                    <input class="agregarE__inputEdit" type="password" name="empleado" id="agregarE__pass" required> 
+                </label>
+
+                <label class="agregarE__labelEdit"  for="empleado">
+                    <span>CONFIRMAR CONTRASEÑA</span>
+                    <input class="agregarE__inputEdit" type="password" name="empleado" id="agregarE__Repetpass" required> 
+                </label>
+            </form>
+        </main>
+
+    </body>
+</html>

@@ -1,0 +1,215 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #E9C1EA;
+    font-family: "Prociono" , sans-serif;
+}
+
+/* ESTILOS PARA LOS OBJETOS DEL HEADER DE LA PANTALLA*/
+
+/*UBICACIÓN ELEMENTOS DEL HEADER*/
+.header{
+    float: center;
+    padding-left: 20%;
+}
+/*CARACTERÍSTICAS DEL CONTENEDOR QUE TIENE NOMBRE Y CAMPO DE INGRESO DE INFORMACIÓN*/
+
+.ingreso-usuario, .ingreso-contra, .ingreso-rol{
+    margin-right: 2%;
+}
+
+/*CARACTERÍSTICAS DEL TEXTO*/
+.ingreso-usuario, .ingreso-contra, .ingreso-rol span{
+    font-family: inherit; /*HERENCIA*/
+    font-size: small;
+   
+}
+
+/*CARACTERÍSTICAS DEL CONTENEDOR DE INGRESO DE INFORMACIÓN*/
+.ingreso-usuario__input, .ingreso-contra__input, .ingreso-rol__input, .header__boton-ingresar{
+    height: 27px;
+    width: 130px;
+    border: 3px solid #14FA39;
+    border-radius: 10px;
+    background: white;
+}
+
+/*CARACTERÍSTICAS DELBOTON DE INGRESO DEL HEADER*/
+.header__boton-ingresar{
+    font-family: inherit; /*HERENCIA*/
+    font-size:medium;
+    text-decoration: none; /*quitar el subrayado del ancor*/
+
+}
+
+/* ESTILOS PARA LAS IMÁGENES PARTE SUPERIOR IZQUIERDA DE LA PANTALLA*/
+ 
+/* DISTANCIA DE TODO EL CAJON DE LA IZQUIERDA CON EL PORDE SUPERIOR */
+.seccion-izq{ 
+    margin-top: 20px;
+    display:inline-block;
+}
+
+/* DISEÑO DEL CONTENDOR DE LA CAJA DE LA IMAGEN CON EL TEXTO*/
+.seccion-izq figure{
+    vertical-align: top; 
+    padding: 20px 0px 100px 17px;
+    font-style: normal;
+    font-weight: 300px;
+    font-size: 14px;
+    line-height: 10px;
+}
+
+/* DISEÑO DE LA IMAGEN*/
+.seccion-izq img{ /*tamaño de la imagen*/
+    width: 60px;
+     height: 62px;
+}
+
+/* DISEÑO DEL TEXTO QUE ACOMPAÑA LA IMAGEN*/
+.seccion-izq figcaption{ /*TUVE QUE VOLVER A PASAR EL TIPO DE LETRA A TRABAJAR*/
+    display:inline-block;
+    font-family: inherit;
+}
+
+
+/* DISEÑO SECCIÓN REGISTRARSE*/
+
+/* DISEÑO DEL CONTENEDOR QUE TIENE LOS ELEMENTOS: section*/
+
+.seccion-regis{
+    display:inline-block;
+    height: 300px; 
+    width: 260px; 
+    padding: 5% 8%;
+}
+
+/* DISEÑO DEL CONTENIDO DE form*/
+
+.seccion-regis form{
+    position: relative;
+    bottom: 30%;
+    padding: 5% 8%;
+    height: 500px;
+    width: 200px;
+}
+
+/* DISEÑO DEL TITULO REGISTRO*/
+.seccion-regis__texto-registro{
+    padding-bottom: 20px;
+    height: 40px;
+    width: 140px;
+}
+
+/* DISEÑO DEL CONTENIDO DE LABEL: NOMBRE Y CAMPO*/
+.seccion-regis label{
+    display:inline-block;
+    vertical-align:top; 
+    padding: 8px;
+}
+
+/* DISEÑO DE TODOS LOS INPUT: INGRESO DE DATOS*/
+.seccion-regis input {
+    height: 27px;/*ALTO*/
+    width: 200px;/*ANCHO*/
+    border: 3px solid #A2F4CD;
+    border-radius: 10px;
+    background: white;
+    display:inline-block;
+    vertical-align:top; 
+    padding: 10%;
+}
+
+/* DISEÑO DE TODOS TITULOS DEL FORMULARIO*/
+.seccion-regis span{
+    font-family: inherit; /*HERENCIA*/
+    font-size: small;
+}
+
+/* DISEÑO DE TODOS TITULOS DEL BOTON DE REGISTRO*/
+.seccion-regis button{
+    height: 27px;/*ALTO*/
+    width: 200px;/*ANCHO*/
+    border: 3px solid #A2F4CD;
+    border-radius: 10px;
+    background: white;
+    display:inline-block;
+    vertical-align:top; 
+    padding: 10%;
+    font-family: inherit; /*HERENCIA*/
+    font-size:medium;
+    position: relative;
+    
+}
+
+
+/*CALCULADORA*/
+
+.container {
+    display: inline-block;
+    vertical-align:top;
+    position:relative;
+    top:50px;
+    left: 15%;
+
+}
+
+.calculadora {
+    display: grid;
+    grid-template-columns: repeat(4, 75px);
+    grid-template-rows: 160px repeat(5, 75px);
+    background-color: white;
+    padding: 15px;
+    border-radius: 32px;
+    box-shadow: 5px 5px 0px 5px #00000033;
+}
+
+button {
+    cursor: pointer;
+    margin: 5px;
+    padding: 0;
+    border-radius: 10px;
+    font-size: 1.5em;
+    border: none;
+    background-color:#A2F4CD;
+}
+
+button:active {
+    background-color: #E9C1EA;
+}
+
+button:focus {
+    outline: none;
+}
+
+.col-2 {
+    grid-column: span 2;
+}
+
+.display {
+    grid-column: 1 / -1;
+    padding: 16px;
+    display: flex;
+    margin: 10px 10px 20px;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color:aliceblue;
+    border-radius: 15px;
+    text-align: right;
+    justify-content: space-between;
+    word-break: break-all;
+    box-shadow: 0px 0px 0px 10px #00000033;
+}
+
+#valor-actual {
+    font-size: 1.5em;
+}
+
+#valor-anterior {
+    font-size: 2em;
+}
