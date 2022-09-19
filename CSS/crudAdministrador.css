@@ -1,0 +1,359 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:"Roboto", sans-serif;
+    background-color:#E9C1EA;
+}
+
+.header{
+    float: right;
+    
+}
+
+
+/*ESTILOS PARA EL CONTENEDOR DE IMAGEN Y TEXTO EMPLEADO*/
+.header__contenedorAdministrador{
+    padding-left: 3px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width:200px;
+    height: 100px;
+    display:inline-block;  
+}
+
+/*TAMAÑO DE LA IMAGEN*/
+.header__estiloAdministrador { 
+    width: 68px;
+    height: 66px;
+}
+
+/*ESTILOS PARA EL TEXTO EMPLEADO*/
+.header__texto-administrador{ 
+   float:right;
+   padding-top: 20px;
+   font-weight: bold;
+}
+/*BOTONES PARA APERTURA Y CIERRE DE CAJA*/
+.header_botonapertura {
+    text-align:center;
+
+
+}
+.header_botoncierre {
+    text-align:center;
+
+
+}
+/*ESTILOS PARA EL BOTON APERTURA Y CIERRE*/
+.header_botoncierre{
+    height: 60px;
+    width: 180px;
+    background: #FEFEFF;
+    border: 5px solid #9EF2CA;
+    border-radius: 50px;
+    margin-right: 300px;
+    position:relative;
+    left:10%;
+    top: -30px;
+   
+}
+
+.header_botonapertura{
+    height: 60px;
+    width: 180px;
+    background: #FEFEFF;
+    border: 5px solid #9EF2CA;
+    border-radius: 50px;
+    margin-right: 300px;
+    position:relative;
+    left:25%;
+    top: -30px;
+   
+}
+.header__botonsalirAdministrador{
+    height: 27px;
+    width: 100px;
+    border: 3px solid #F13CF6;
+    border-radius: 10px;
+    background: white;
+    position:relative;
+    left:5%;
+    top: -30px;
+    cursor: pointer;
+}
+/*Contenedor . Contenedor CRUD VENTAS */
+.ventasAdministrador {
+    width: 260px;
+    height: 140px;
+    position: relative;
+    bottom: 60%;
+    display:inline-block;
+    padding-left: 10px;
+}
+.ventasAdministrador__cont-ventasA{
+    border: 5px solid #9EF2CA;
+    background: white;
+    height: 165px;
+    width: 428px;
+    border-radius: 20px;
+    display:inline-block;
+    margin-top:30px ;
+    margin-left: 90px;
+}
+.cont-ventas__ventasA {
+    border: 5px solid #9EF2CA;
+    background:#9EF2CA ;
+    border-radius: 20px;
+    width: 425px;
+    height: 42px;
+    text-align: center;
+    position: relative;
+    right: 4px;
+    bottom: 1px;
+    display:inline-block;
+}
+.cont-ventas__crud {
+
+    height: 110px;
+    width: 413px;
+    display:inline-block;   
+    
+}
+.estiloEliminarVentasAd {
+    width: 55px;
+    height: 32px;
+}
+.estiloEditarVentasAd {
+    width: 30px;
+    height: 30px;
+}
+.estiloBuscarVentasAd {
+    width: 30px;
+    height: 32px;
+}
+
+.estiloAgregarVentasAd {
+    width: 32px;
+    height: 29px;  
+}
+
+.cont-ventas__crud img {
+    display:inline-block;
+    text-align: center;
+}
+.cont-ventas__crud figure {
+   
+    padding-right:40px ;
+    margin-top: 30px;
+    float:right;
+    text-align:center ;  
+}
+/*Contenedor CRUD Productos */
+.administradorProductos {
+    width: 428px;
+    height: 165px;
+    position: relative;
+    left:800px;
+    top:-150px;
+    
+}
+
+.administradorProductos__cont-productos{
+    border: 5px solid #9EF2CA;
+    background: white;
+    height: 165px;
+    width: 428px;
+    border-radius: 20px;
+    display:inline-block;
+    margin-top:-15px ;
+    margin-left: 10px;
+}
+
+
+.cont-productos__productosA {
+    border: 5px solid #9EF2CA;
+    background:#9EF2CA ;
+    border-radius: 20px;
+    width: 425px;
+    height: 42px;
+    text-align: center;
+    position: relative;
+    right: 4px;
+    bottom: 1px;
+    display:inline-block;
+}
+.cont-productosA__crud {
+    height: 110px;
+    width: 413px;
+    display:inline-block; 
+    margin-left: 30px;     
+}
+.estiloEliminarProductoAd {
+    width: 55px;
+    height: 30px;  
+}
+.estiloEditarProductoAd {
+    width: 30px;
+    height: 30px;
+}
+
+.estiloAgregarProductoAd {
+    width: 32px;
+    height: 32px;  
+}
+.estiloBuscarProductoAd {
+    width: 32px;
+    height: 32px;
+}
+
+.estiloVerProductoAd {
+    width: 29px;
+    height: 29px;
+    margin-top: 30px;
+   
+}
+.cont-productosA__crud img {
+    display:inline-block;
+    text-align: center;
+}
+.cont-productosA__crud figure {
+   
+    padding-right:35px ;
+    margin-top: 30px;
+    float:right;
+    text-align:center ;  
+}
+/*CONTENEDOR EMPLEADOS*/
+
+.empleadosAdministrador {
+    width: 260px;
+    height: 140px;
+    position: relative;
+    bottom: 60%;
+    padding-left: 10px;
+}
+.empleadosAdministrador__cont-empleadosA{
+    border: 5px solid #9EF2CA;
+    background: white;
+    height: 165px;
+    width: 428px;
+    border-radius: 20px;
+    margin-top:-60px;
+    margin-left: 90px;
+}
+.cont-empleados__empleadosAd {
+    border: 5px solid #9EF2CA;
+    background:#9EF2CA ;
+    border-radius: 20px;
+    width: 425px;
+    height: 42px;
+    text-align: center;
+    position: relative;
+    right: 4px;
+    bottom: 1px;
+    
+}
+.cont-empleadosA__crud {
+
+    height: 110px;
+    width: 413px;
+    
+}
+
+.estiloEliminarempleadosAd {
+    width: 55px;
+    height: 32px;
+}
+.estiloEditarempleadosAd {
+    width: 29px;
+    height: 29px;
+}
+.estiloAgregarempleadosAd {
+    width: 40px;
+    height: 29px;
+}
+
+.estiloVerempleadosAd {
+    width: 29px;
+    height: 29px;  
+}
+
+.cont-empleadosA__crud img {
+    display:inline-block;
+    text-align: center;
+}
+.cont-empleadosA__crud figure {
+    padding-right:40px ;
+    margin-top: 30px;
+    float:right;
+    text-align:center ;
+
+
+}
+   
+/*Contenedor CRUD REPORTE */
+.administradorReporte {
+    width: 428px;
+    height: 165px;
+    position: relative;
+    left:800px;
+    top:-150px;
+    
+}
+
+.administradorReporte__cont-reporte{
+    border: 5px solid #9EF2CA;
+    background: white;
+    height: 165px;
+    width: 428px;
+    border-radius: 20px;
+    margin-top:20px ;
+    margin-left: 10px;
+}
+
+
+.cont-reporte__reporteA {
+    border: 5px solid #9EF2CA;
+    background:#9EF2CA ;
+    border-radius: 20px;
+    width: 425px;
+    height: 42px;
+    text-align: center;
+    position: relative;
+    right: 4px;
+    bottom: 1px;
+}
+.cont-reporteA__crud {
+    height: 110px;
+    width: 413px;
+    margin-left: 40px;     
+}
+.estiloGuardarReporteAd {
+    width: 60px;
+    height: 35px;  
+}
+.estiloVerReporteAd {
+    width: 30px;
+    height: 30px;
+}
+
+.estiloGenerarReporteAd {
+    width: 32px;
+    height: 32px;  
+}
+
+.cont-reporteA__crud img {
+    display:inline-block;
+    text-align: center;
+}
+.cont-reporteA__crud figure {
+   
+    padding-right:70px ;
+    margin-top: 30px;
+    float:right;
+    text-align:center ;  
+}
