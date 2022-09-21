@@ -1,0 +1,119 @@
+<!DOCTYPE html> <!-- esto es un archivo html-->
+<html lang="en"> <!-- tipo de idioma escrito-->
+    <head> <!-- etiquetas de escritura-->
+        <meta charset="UTF-8"> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PRODUCTOS</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Prociono&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../CSS/productosEmpAdmin.css">
+    </head>
+
+    <body>
+        <header>
+            <a href="../HTML/crudAdministrador.html">
+            <figure class= "header__contenedor-punta">
+                <img class="header__estilo-imagen" src="https://firebasestorage.googleapis.com/v0/b/bestteam-a5bbb.appspot.com/o/papeleria.png?alt=media&token=629da6e2-eaf0-4744-bc2f-f5dd32a6810f"  alt="inventario pick"> 
+                <figcaption class ="header__texto-productos"> PRODUCTOS</figcaption>
+            </figure>
+            </a>
+           
+            <a id="salirPlataforma" class="header__boton-salir" href="../HTML/Index.html"> SALIR</a>
+        </header>
+
+
+            <!--CONTENEDOR CON HERRAMIENTAS ATRAS- ADELANTE - EDITAR - ELIMINAR - BUSCAR-->
+            <section class="estilo-cajaFunciones"> 
+                <figure>
+                    <img class="estiloImagenAtras" src="https://firebasestorage.googleapis.com/v0/b/bestteam-a5bbb.appspot.com/o/adelante.png?alt=media&token=1a203fe6-951c-4296-be2b-7c51627b67bf"  alt="img atras"> 
+                    <figcaption>Atrás</figcaption>
+                </figure>
+
+                <figure>
+                    <img class="estiloImagenAdelante" src="https://firebasestorage.googleapis.com/v0/b/bestteam-a5bbb.appspot.com/o/adelante.png?alt=media&token=1a203fe6-951c-4296-be2b-7c51627b67bf"  alt="img adelante"> 
+                    <figcaption>Adelante</figcaption>
+                </figure>
+
+                <figure>
+                    <img class="estiloImagenEditar" src="https://firebasestorage.googleapis.com/v0/b/bestteam-a5bbb.appspot.com/o/editar.png?alt=media&token=4db443c1-ebf1-43cd-95d2-4982cffe85f5"  alt="img editar"> 
+                    <figcaption>Editar</figcaption>
+                </figure>
+
+                <figure>
+                    <img class="estiloImagenEliminar" src="https://firebasestorage.googleapis.com/v0/b/bestteam-a5bbb.appspot.com/o/contenedor-de-basura.png?alt=media&token=f66bf4cc-5e7e-436d-b560-0757bd3d7e7e"  alt="img eliminar"> 
+                    <figcaption>Eliminar</figcaption>
+                </figure>
+
+                <figure>
+                    <img class="estiloImagenBuscar" src="https://firebasestorage.googleapis.com/v0/b/bestteam-a5bbb.appspot.com/o/buscar.png?alt=media&token=1a711970-0af5-443e-b717-2cccf4e1e07f"  alt="img buscar"> 
+                    <figcaption>Buscar</figcaption>
+                </figure>
+            </section>
+
+            <!--CONTENEDOR IMAGEN DE AGREGAR PRODUCTO-->
+            <figure class="contenedorImagen-addCar">
+                <img src="https://firebasestorage.googleapis.com/v0/b/bestteam-a5bbb.appspot.com/o/addCar.png?alt=media&token=3ac53957-ea5b-47c6-960f-f30cdb439543"  alt="pick add"> 
+            </figure>
+
+            <!-- CAMPOS PARA REGISTRAR PRODUCTO-->
+             <!-- nombre producto-->
+            <section class="contenedor-registroProducto">
+                <form action="">
+                    <label>
+                        <span>NOMBRE</span>
+                        <input id="contenedor-registroProducto__nombre" class="registroProducto__add" type="text" > 
+                    </label>
+
+                    <!-- código-->
+                    <label>
+                        <span>CODIGO</span>
+                        <input id="contenedor-registroProducto__codigo" class="registroProducto__add" type="text" > 
+                    </label>
+
+                    <!-- Tipo-->
+                    <label>
+                        <span>TIPO</span>
+                        <input id="contenedor-registroProducto__tipo" class="registroProducto__add" type= "text"> 
+                    </label>
+
+                    <!-- TODO: descripción REVISAR EL CAMPO PARA VARIOS CARACTERES--> 
+                    <label>
+                        <span>DESCRIPCIÓN</span>
+                        <input id="contenedor-registroProducto__descr" class="registroProducto__add" type="textarea"></input>
+                    </label>
+
+                    <!-- valor producto -->
+                    <label>
+                        <span>VALOR DEL PRODUCTO</span>
+                        <input id="contenedor-registroProducto__valor" class="registroProducto__valor" type="text" required> 
+                    </label>
+                </form>
+            </section>
+            <!--CONTENEDOR DE GUARDAR PRODUCTOS EN SISTEMA-->
+            <div class="guardarProducto__cont-principal">
+                    <button id="guardarProducto__eventoBotonUno" onclick="guardarProduct()">GUARDAR PRODUCTO</button>
+            </div>
+            <!--CONTENEDOR PARA GUARDAR UNA IMAGEN EN ESE ESPACIO POR PARTE DEL CLIENTE-->
+            <section id="seccionImagen">
+                <div class="insertarImagen">
+                    <span class="insertarImagen__textoDentro" for="">COLOCA LA IMAGEN DEL PRODUCTO AQUI</span>
+                    <input class="insertarImagen__add" type="file">
+                </div>
+                <!--CONTENEDOR DE GUARDAR IMAGEN PRODUCTOS EN SISTEMA-->
+                <section id="sec-agregarImagenProducto">
+                    <div class="agregarImagenProducto__cont-principal">
+                        <h5 class="agregarImagenProducto__texto">¿desea conservar esta imagen del producto?</h5>
+                            <div class="agregarImagenProducto__siNo">SI</div>
+                            <div class="agregarImagenProducto__siNo">NO</div>
+                       <button class="agregarImagenProducto__img" >
+                        <img src="https://firebasestorage.googleapis.com/v0/b/bestteam-a5bbb.appspot.com/o/salvar.png?alt=media&token=3dc86d8a-1af8-4d3b-9898-11e8d68b2102" alt="">
+                       </button>
+                    </div>
+                </section>
+            </section>   
+    </body>
+
+
+</html>
