@@ -1,0 +1,196 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:"Roboto", sans-serif;
+    background-color:#A2F4CD;
+}
+
+.header{
+    float: right;
+    
+}
+
+
+/*ESTILOS PARA EL CONTENEDOR DE IMAGEN Y TEXTO EMPLEADO*/
+.header__contenedorEmpleado{
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    width:180px;
+    height: 100px;
+    display:inline-block;  
+}
+
+/*TAMAÑO DE LA IMAGEN*/
+.header__estiloEmpleado { 
+    width: 68px;
+    height: 66px;
+}
+
+/*ESTILOS PARA EL TEXTO EMPLEADO*/
+.header__texto-empleados{ 
+   float:right;
+   padding-top: 30px;
+   font-weight: bold;
+}
+
+/*ESTILOS PARA EL BOTON SALIR DEL HEADER*/
+.header__botonsalirEmpleado{
+    height: 27px;
+    width: 100px;
+    border: 3px solid #F13CF6;
+    border-radius: 10px;
+    background: white;
+    position:relative;
+    left:76%;
+    top: 50%;
+}
+
+
+/*contenedor de ingresar producto al sistema. Contenedor CRUD Productos */*/
+.empleadoProductos {
+    width: 260px;
+    height: 140px;
+    position: relative;
+    bottom: 60%;
+    display:inline-block;
+    padding-left: 10px;
+}
+.empleadoProductos__cont-productos{
+    border: 5px solid #E9C1EA;
+    background: white;
+    height: 165px;
+    width: 428px;
+    border-radius: 20px;
+    display:inline-block;
+    margin-top:40px ;
+    margin-left: 90px;
+}
+.cont-productos__productos {
+    border: 5px solid #E9C1EA;
+    background:#E9C1EA ;
+    border-radius: 20px;
+    width: 425px;
+    height: 42px;
+    text-align: center;
+    position: relative;
+    right: 4px;
+    bottom: 1px;
+    display:inline-block;
+}
+.cont-productos__crud {
+
+    height: 110px;
+    width: 413px;
+    display:inline-block;   
+    
+}
+.estiloEliminarProductoEm {
+    width: 40px;
+    height: 29px;  
+}
+.estiloBuscarProductoEm {
+    width: 29px;
+    height: 29px;
+}
+.estiloVerProductoEm {
+    width: 30px;
+    height: 30px;
+}
+.estiloEditarProductoEm {
+    width: 29px;
+    height: 29px;
+}
+.estiloAgregarProductoEm {
+    width: 29px;
+    height: 29px;
+}
+
+.cont-productos__crud img {
+    display:inline-block;
+    text-align: center;
+}
+.cont-productos__crud figure {
+   
+    padding-right:29px ;
+    margin-top: 30px;
+    float:right;
+    text-align:center ;  
+}
+/*Contenedor CRUD Ventas */
+.empleadoVentas {
+    width: 300px;
+    height: 160px;
+    position: relative;
+    left:800px;
+    top:-150px;
+}
+
+.empleadoVentas__cont-ventas{
+    border: 5px solid #E9C1EA;
+    background: white;
+    height: 150px;
+    width: 290px;
+    border-radius: 20px;
+    display:inline-block;
+
+}
+.cont-ventas__ventas {
+    border: 5px solid #E9C1EA;
+    background:#E9C1EA ;
+    border-radius: 20px;
+    width: 289px;
+    height: 30px;
+    text-align: center;
+    position: relative;
+    right: 4px;
+    bottom: 1px;
+    display:inline-block;
+}
+.cont-ventas__crud {
+    height: 100px;
+    width: 200px;
+    display:inline-block; 
+    margin-left: 40px;  
+}
+.estiloAgregarVentaEm {
+    width: 29px;
+    height: 29px;  
+}
+.estiloBuscarVentaEm {
+    width: 29px;
+    height: 29px;
+}
+
+
+.cont-ventas__crud img {
+    display:inline-block;
+    text-align: center;
+}
+.cont-ventas__crud figure {
+   
+    padding-right:29px ;
+    margin-top: 30px;
+    float:right;
+    text-align:center ;  
+}
+/*BOTONES PARA APERTURA Y CIERRE DE CAJA*/
+
+.botonesCaja {
+    text-align:center;
+
+
+}
+.botonesCaja button{
+    width: 153px;
+    height: 60px;
+    background: #FEFEFF;
+    border: 5px solid #E9C1EA;
+    border-radius: 20px;
+    margin-right: 120px;
+
+}
