@@ -77,6 +77,15 @@ body{
     font-family: inherit;
 }
 
+/*ESTILOS DEL BOTON PARA EL MODAL EN IMAGEN PRODUCTOS*/
+.seccion-izq__productos{
+    transition: background-color .3s;
+}
+
+
+.seccion-izq__productos:hover{
+    color: #F13CF6;
+}
 
 /* DISEÑO SECCIÓN REGISTRARSE*/
 
@@ -212,4 +221,77 @@ button:focus {
 
 #valor-anterior {
     font-size: 2em;
+}
+
+
+/*DISEÑOS PARA EL MODAL*/
+.modal{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: #E9C1EAbd;/*bd da transparencia*/
+    display: flex;
+    opacity:0;
+    pointer-events:none;
+}
+
+.modal--show{
+    opacity: 1;
+    pointer-events: unset;
+}
+
+.modal__contenedor{
+    margin: auto; /*su contenedor padre tiene el display flex, así que con auto se centra todo el contenido*/
+    width: 90%;
+    max-width: 1000px;
+    max-height: 90%;
+    background-color: white;
+    border-radius: 6px;
+    padding: 3em 2.5em;
+    display: grid;
+    gap: 1em;
+    place-items: center;
+    grid-auto-columns: 100%;
+    border-radius: 5px;
+}
+
+.modal__tituloProducto{
+    font-size: 2.5rem;
+}
+
+.modal__salida{
+    text-decoration: none;
+    color: black;
+    background-color: #A2F4CD;
+    padding: 1em 3em;
+    border: 1px solid;
+    border-radius: 10px;
+    display:inline-block;
+    transition: background-color .3s;
+}
+
+.modal__salida:hover{
+    color: #14FA39;
+    background-color: white;
+    font-size: 20px;
+
+}
+
+
+/*DISEÑO DE LAS TABLAS*/
+
+.modal__tabla th{
+ padding-left: 5px;
+ padding-right: 50px;
+ width: 50px;
+ place-items: center;
+
+}
+
+
+.modal__imagenProducto{
+    max-width: 80px;
+    max-height: 45px ;
 }
