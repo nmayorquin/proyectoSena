@@ -5,14 +5,15 @@ const permisoUsuario = new autenticarUsuarios();
 const loguearse = document.getElementById ("ingreso-plataforma");
 loguearse.addEventListener('submit', botonLoguearse);
 
-const formularioRegistro = document.querySelector (".formularioInscripcion");
+const formularioRegistro = document.getElementById ("formularioInscripcion");
 formularioRegistro.addEventListener('submit', formularioInscripcion);
 
 
 function botonLoguearse(event){
+
     event.preventDefault();
-    const email = document.getElementById ("ingreso-usuarioEmail");
-    const password = document.getElementById ("ingreso-pass");
+    const email = document.getElementById ("ingreso-plataforma__email");
+    const password = document.getElementById ("ingreso-plataforma__pass");
 
     permisoUsuario.ingreso(email.value, password.value)
     .then((logged) => {
@@ -20,7 +21,7 @@ function botonLoguearse(event){
      })
 
      .catch(error => 
-         console.log(error));
+         alert("verifique su usuario y contraseña e inténtelo nuevamente"));
 }
 
 
@@ -32,7 +33,6 @@ function formularioInscripcion(event){
 
     permisoUsuario.registro(email.value, password.value)
         .then((logged) => {
-           location.href = "../HTML/crudAdministrador.html";
            alert("registro con éxito");
         })
 

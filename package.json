@@ -5,7 +5,6 @@
   "description": "hemos tenido problemas con el proyecto 1 por instalaciones con firebase, se crea nuevo repositorio de mismo proyecto",
   "main": "index.js",
   "scripts": {
-
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,6 +19,6 @@
   },
   "homepage": "https://github.com/nmayorquin/proyectoSena#readme",
   "dependencies": {
-    "firebase": "^9.10.0"
+    "firebase": "^9.9.3"
   }
 }
