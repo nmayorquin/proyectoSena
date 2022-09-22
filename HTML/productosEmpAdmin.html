@@ -89,30 +89,25 @@
                         <span>VALOR DEL PRODUCTO</span>
                         <input id="contenedor-registroProducto__valor" class="registroProducto__valor" type="text" required> 
                     </label>
-                </form>
-            </section>
-            <!--CONTENEDOR DE GUARDAR PRODUCTOS EN SISTEMA-->
-            <div class="guardarProducto__cont-principal">
-                    <button id="guardarProducto__eventoBotonUno" onclick="guardarProduct()">GUARDAR PRODUCTO</button>
-            </div>
+
             <!--CONTENEDOR PARA GUARDAR UNA IMAGEN EN ESE ESPACIO POR PARTE DEL CLIENTE-->
             <section id="seccionImagen">
-                <div class="insertarImagen">
+                <div id="contenedorImagen__preview" class="insertarImagen">
                     <span class="insertarImagen__textoDentro" for="">COLOCA LA IMAGEN DEL PRODUCTO AQUI</span>
-                    <input class="insertarImagen__add" type="file">
+                    <input id="insertarImagen__addImg" class="insertarImagen__add" type="file">
                 </div>
-                <!--CONTENEDOR DE GUARDAR IMAGEN PRODUCTOS EN SISTEMA-->
-                <section id="sec-agregarImagenProducto">
-                    <div class="agregarImagenProducto__cont-principal">
-                        <h5 class="agregarImagenProducto__texto">¿desea conservar esta imagen del producto?</h5>
-                            <div class="agregarImagenProducto__siNo">SI</div>
-                            <div class="agregarImagenProducto__siNo">NO</div>
-                       <button class="agregarImagenProducto__img" >
-                        <img src="https://firebasestorage.googleapis.com/v0/b/bestteam-a5bbb.appspot.com/o/salvar.png?alt=media&token=3dc86d8a-1af8-4d3b-9898-11e8d68b2102" alt="">
-                       </button>
-                    </div>
-                </section>
             </section>   
+
+                    <div class="guardarProducto__cont-principal">
+                            <button id="guardarProducto__eventoBotonUno">GUARDAR PRODUCTO</button>
+                    </div>
+                </form>
+            </section>
+          
+<!-- IMPORTACIÓN DE ARCHIVO PARA FUNCIONAMIENTO DE LA VISTA AGREGAR PRODUCTO-->
+    <script type="module" src="../BD/productosEmAdmin.js"> </script>
+    
+
     </body>
 
 

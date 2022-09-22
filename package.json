@@ -1,0 +1,24 @@
+{
+  "name": "proyectosena",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "hemos tenido problemas con el proyecto 1 por instalaciones con firebase, se crea nuevo repositorio de mismo proyecto",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nmayorquin/proyectoSena.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nmayorquin/proyectoSena/issues"
+  },
+  "homepage": "https://github.com/nmayorquin/proyectoSena#readme",
+  "dependencies": {
+    "firebase": "^9.9.3"
+  }
+}
