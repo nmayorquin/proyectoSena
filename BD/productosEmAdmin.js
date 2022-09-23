@@ -4,7 +4,7 @@ import {ref, set} from "https://www.gstatic.com/firebasejs/9.9.4/firebase-databa
 
 //VISTA PRELIMINAR DE LA IMAGEN DE PRODUCTO
 
-document.getElementById("contenedor-registroProducto__addImg")
+document.getElementById("insertarImagen__addImg")
 .onchange = function(e){
     let lectura= new FileReader();
     lectura.readAsDataURL(e.target.files[0]);
