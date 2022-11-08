@@ -17,6 +17,7 @@ function botonLoguearse(event){
 
     permisoUsuario.ingreso(email.value, password.value)
     .then((logged) => {
+        alert("usted ha ingresado al sistema");
         location.href = "../HTML/crudAdministrador.html";
      })
 

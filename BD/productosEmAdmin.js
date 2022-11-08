@@ -4,22 +4,23 @@ import {ref, set} from "https://www.gstatic.com/firebasejs/9.9.4/firebase-databa
 
 //VISTA PRELIMINAR DE LA IMAGEN DE PRODUCTO
 
-document.getElementById("insertarImagen__addImg")
-.onchange = function(e){
-    let lectura= new FileReader();
-    lectura.readAsDataURL(e.target.files[0]);
-    lectura.onload = function(){
-        let previsualiza = document.getElementById("contenedorImagen__preview");
-        imagen = document.createElement("img");
-        imagen.src = lectura.result;
-        previsualiza.append(imagen);
+document.addEventListener("DOMContentLoaded", () => {
+    const imagen = document.getElementById ("insertarImagen__addImg");
+    imagen.addEventListener("chance", () => {
+        for(let i =0; i < imagen.isDefaultNamespace.length; i++){
+            const elemento = URL.createObjectURL(archivo.files[i]); //nos crea una ruta a partir del archivo que subimos
+            const archivo = document.createElement("img");
+            archivo.src = elemento;
+            document.body.appendChild(archivo);
+        }
+    });
+});
 
-    }
-}
+
 
 
 //lo que se encuentra dentro del import son métodos
-/*
+
     var agregarProducto__nombre = document.getElementById("contenedor-registroProducto__nombre");
     var agregarProducto__codigo = document.getElementById("contenedor-registroProducto__codigo");
     var agregarProducto__tipo = document.getElementById("contenedor-registroProducto__tipo");
@@ -47,4 +48,3 @@ function agregarProductoVistaProductos(){
 }
 
     boton__agregarProductoAll.addEventListener('click', agregarProductoVistaProductos);
-*/

@@ -196,16 +196,7 @@ body{
     line-height: 60px;
 }
 
-.insertarImagen__add{
-   position: absolute; /*si el contenedor principal tiene relative, se coloca absolute para que este se mueva con su contenedor padre*/
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-}
+
 
 
 
