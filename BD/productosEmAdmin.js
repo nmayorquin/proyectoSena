@@ -25,19 +25,18 @@ document.addEventListener("DOMContentLoaded", () => {
     var agregarProducto__codigo = document.getElementById("contenedor-registroProducto__codigo");
     var agregarProducto__tipo = document.getElementById("contenedor-registroProducto__tipo");
     var agregarProducto__descripcion = document.getElementById("contenedor-registroProducto__descr");
-    var agregarProducto__imagen = document.getElementById("contenedor-registroProducto__addImg");
+    //var agregarProducto__imagen = document.getElementById("contenedor-registroProducto__addImg");
     var agregarProducto__precio = document.getElementById("contenedor-registroProducto__valor");
 
     var boton__agregarProductoAll = document.getElementById("guardarProducto__eventoBotonUno");
 //FUNCIÓN PARA INSERTAR DATOS
 function agregarProductoVistaProductos(){
     
-    set(ref(database, "usuarios/" + agregarEmployee__id.value),{
+    set(ref(database, "producto/" + agregarProducto__codigo.value),{
         nameProduct: agregarProducto__nombre.value,
-        codeProduct:agregarProducto__codigo.value,
         typeProduct: agregarProducto__tipo.value,
         discountProduct: agregarProducto__descripcion.value,
-        imageproduct: agregarProducto__imagen.value,
+        //imageproduct: agregarProducto__imagen.value,
         valueProduct: agregarProducto__precio.value,
     })
     .then(() => { 
